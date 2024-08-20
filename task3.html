@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصميم صفحة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin: 50px;
+            width: 60%;
+            display: inline-block;
+        }
+
+        header,
+        nav,
+        article,
+        section,
+        aside,
+        footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+
+        header {
+            background-color: #f8f8f8;
+        }
+
+        nav {
+            background-color: #e8e8e8;
+        }
+
+        section {
+            background-color: #f0f0f0;
+            overflow: hidden; 
+        }
+
+        article {
+            float: left;
+            width: 50%; 
+            margin: 5px;
+            background-color: #f0f0f0;
+        }
+
+        aside {
+            float: left; 
+            width: 30%; 
+            margin: 5px;
+            background-color: #d8d8d8;
+        }
+
+        footer {
+            background-color: #c8c8c8;
+        }
+
+        .SectionArticle {
+            width: 50%;
+        }
+
+        .SectionNav {
+            display: inline-block;
+            width: 10%;
+        }
+
+        .SectionNav1 {
+            display: inline-block;
+            visibility: hidden;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <nav>
+        <section class="SectionNav1"></section>
+        <section class="SectionNav"></section>
+        <section class="SectionNav"></section>
+        <section class="SectionNav"></section>
+    </nav>
+    <section >
+        <article>
+            <h2>Article</h2>
+            <section class="SectionArticle"></section>
+            <section class="SectionArticle"></section>
+            <section class="SectionArticle"></section>
+        </article>
+        <aside>
+            <h2>Aside</h2>
+            <section class="SectionArticle"></section>
+            <section class="SectionArticle"></section>
+            <section class="SectionArticle"></section>
+        </aside>
+    </section>
+    <footer>
+        <p>© 2024</p>
+    </footer>
+</body>
+
+</html>
