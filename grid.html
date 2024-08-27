@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تصميم صفحة</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 400px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3px;
+      }
+
+      .header {
+        background-color: #4CAF50; 
+        text-align: center;
+        grid-column: span 2;
+      }
+
+      .nav {
+        background-color: #2196F3; 
+        text-align: center;
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 65px 65px 65px;
+        gap: 30px;
+        justify-content: end;
+      }
+
+      .nav span {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+
+      .article {
+        background-color: #FFEB3B; 
+        padding: 5px;
+      }
+
+      .aside {
+        background-color: #FF9800; 
+        padding: 5px;
+      }
+
+      .section {
+        background-color: #FFC107; 
+        padding: 5px;
+        margin: 5px;
+      }
+
+      .footer {
+        background-color: #9C27B0; 
+        text-align: center;
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+      <div class="nav">
+        <span>Section</span>
+        <span>Section</span>
+        <span>Section</span>
+      </div>
+      <div class="article">
+        <h1>Article</h1>
+        <div class="section">Section 1</div>
+        <div class="section">Section 2</div>
+        <div class="section">Section 3</div>
+      </div>
+      <div class="aside">
+        <h1>Aside</h1>
+        <div class="section">Section 1</div>
+        <div class="section">Section 2</div>
+      </div>
+      <div class="footer">
+        <p>Footer</p>
+      </div>
+    </div>
+  </body>
+</html>
