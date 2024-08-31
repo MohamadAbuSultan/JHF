@@ -1,0 +1,65 @@
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat, Mix, Fraction]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  
+  
+  Grid
+  Child
+  - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]
+  - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]
+  */
+
+  
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #fefefe;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /* grid-template-columns: 25% 50% 25%; */
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns: 100px 100px auto; */
+    /* grid-template-columns: repeat(5, auto); */
+    /* grid-template-columns: 100px 200px 25% auto; */
+    /* grid-template-columns: 100px repeat(3,50px) 25% repeat(2,auto); */
+
+    /* 
+        fraction is greedy
+        auto is shy
+        auto takes the minimum size according to the content
+    */
+    /* grid-template-columns: 100px 100px 1fr; */
+    /* grid-template-columns: 100px 100px 1fr; */
+    /* grid-template-columns: auto auto 1fr 1fr; */
+    /* grid-template-columns: repeat(2, auto) repeat(2, 1fr); */
+
+    /* grid-template-columns: repeat(6, auto); */
+    /* grid-template-rows: repeat(3, auto); */
+    /* row-gap: 10px;
+      column-gap: 10px; */
+    /* gap: 10px 10px;
+    justify-content: space-between;
+    align-content: space-between; */
+    
+}
+
+.parent div {
+    background-color: red;
+    color: rgb(41, 2, 2);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    /* grid-column: span 4; */
+}

@@ -1,0 +1,47 @@
+.parent {
+    margin: 20px auto;
+    width: 400px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 5px;
+    background-color: #fefefe;
+}
+
+.brick {
+    background-color: pink;
+    border: 2px solid white;
+}
+
+.parent div:nth-child(1) {
+    grid-column: span 3;
+}
+
+.parent div:nth-child(2) {
+    grid-column: span 1;
+}
+
+.parent div:nth-child(3) {
+    grid-column: span 2;
+}
+
+.parent div:nth-child(4) {
+    grid-column: span 2;
+}
+
+.parent div:nth-child(5) {
+    grid-column: span 3;
+}
+
+.parent div:nth-child(6) {
+    grid-column: span 1;
+}
+
+.parent div:nth-child(7) {
+    grid-column: span 2;
+}
+
+.parent div:nth-child(8) {
+    grid-column: span 2;
+}
